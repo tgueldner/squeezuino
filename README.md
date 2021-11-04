@@ -3,7 +3,7 @@ SqueezUINO brings the idea of TonyUINO to a Squeezebox system.
 
 It enables your Squeezeboxes to play a song, a playlist or favorite by passing a RFID card in front of a reader.
 
-## Prerequisite
+## Prerequisites
 You need:
 * an Openhab installation with 
   * Squeezebox binding https://www.openhab.org/addons/bindings/squeezebox/
@@ -17,4 +17,3 @@ You need:
 * install Arduino sketch
 * identify a RFID tag. The sketch will print the tag ID to serial. To connect and listen for the first time. 
 * tweak your openhab config using transform/squeezuino.map to map RFID tag to a song, playlist or favorite.
- 
