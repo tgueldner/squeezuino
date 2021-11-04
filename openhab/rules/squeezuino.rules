@@ -1,0 +1,18 @@
+rule "Play a song"
+when
+  Item PlayerSqueezuino changed
+then
+  try {
+    var String stream = transform("MAP", "squeezuino.map", PlayerSqueezuino.state.toString)
+    if(stream.startsWith("favorite:")) {
+      PlayerWohnzimmerPlayFavorite.sendCommand(stream.split(":").get(1))
+    } else {
+      if (stream != NULL && stream != "") {
+        PlayerWohnzimmerStream.sendCommand(stream)
+      }
+    }
+  } catch(TransformationException e) {
+    // rubish
+  }
+end
+

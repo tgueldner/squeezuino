@@ -1,0 +1,4 @@
+String PlayerWohzimmerSource	"Wohnzimmer Source"	{channel="squeezebox:squeezeboxplayer:myServer:wohnzimmer:source"}
+String PlayerWohnzimmerStream	"Wohzimmer Play"	{channel="squeezebox:squeezeboxplayer:myServer:wohnzimmer:stream"}
+String PlayerWohnzimmerPlayFavorite "Wohnzimmer Favorite" {channel="squeezebox:squeezeboxplayer:myServer:wohnzimmer:playFavorite"}
+String PlayerSqueezuino		"Squeezuino"	{channel="mqtt:topic:home:licht:radio_wohnzimmer_tag"}

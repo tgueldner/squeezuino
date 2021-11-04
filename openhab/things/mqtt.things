@@ -1,0 +1,6 @@
+Bridge mqtt:broker:home [ host="localhost", port=1883, secure=false ]{
+    Thing topic radio  {
+    Channels:
+       Type string : radio_wohnzimmer_tag "Wohnzimmer RFID tag" [ stateTopic="radio/squeezuino/tag" ]
+    }
+}
